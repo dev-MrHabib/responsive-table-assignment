@@ -1,0 +1,57 @@
+body{
+    padding: 0 1.7em;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+table,td,tr,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td,th{
+    padding: .5em;
+    font-size: 1.7rem;
+}
+table{
+    margin-bottom: 1.5em;
+}
+p{
+    font-size: 1.6rem;
+}
+caption{
+    margin-bottom: .5em;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: brown;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+
+@media screen and (max-width:765px){
+    .container{
+        display: block;
+    }
+    table{
+        width: 10%;
+    }
+    td,th{
+        font-size: 1.6rem;
+    }
+    .table-container{
+        overflow-x: scroll;
+    }
+    caption{
+       font-size: 1.7rem;
+       letter-spacing: 3px;
+       font-weight: bold;
+    }
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
